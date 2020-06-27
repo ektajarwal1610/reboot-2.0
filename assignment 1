@@ -1,0 +1,36 @@
+problem:1 #block system call
+to block system calls for date command 
+ans:  to block date command 
+steps requires:
+1)first check where is the code of date command use command "where date"
+where command give the location where is the date command saye output is "/usr/bin/date"
+2)login as root 
+    -steps to login as a root:
+    -run sudo -i
+    -you enter the root terminal
+    -now type passwd
+     it will as for a ner password .enter the password then
+    -logout that user
+    -now you can login as root
+3)go to file system
+4)click on othere location
+5)select my computer
+6)select usr directory
+7)now click on bin directory
+8)open the date folder
+
+
+
+problem:2 #create a directory with name "-okgoogle"
+command : #/root/-okgoogle
+[root@localhost ~]# mkdir /root/-okgoogle
+[root@localhost ~]# ls
+anaconda-ks.cfg  Documents  Music      Pictures  restored   Videos
+Desktop          Downloads  -okgoogle  Public    Templates
+:#create a directory without name from command line
+command : #mkdir -p ' '
+
+root@localhost ~]# mkdir -p ' '
+[root@localhost ~]# ls
+' '                Desktop     Downloads   -okgoogle   Public     Templates
+ anaconda-ks.cfg   Documents   Music       Pictures    restored   Videos
