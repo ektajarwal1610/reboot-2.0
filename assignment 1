@@ -12,13 +12,12 @@ where command give the location where is the date command saye output is "/usr/b
      it will as for a ner password .enter the password then
     -logout that user
     -now you can login as root
-3)go to file system
-4)click on othere location
-5)select my computer
-6)select usr directory
-7)now click on bin directory
-8)open the date folder
-
+3)echo $PATH
+4)now create a directory #mkdir /root/new
+5)now move the location of date command to this directory = # mv /usr/bin/date /root/new
+6)now if u run the date command it will not run .
+do same with firefox 
+and if u want to run again the conmmand just add this location to the PATH variable by this command = #PATH= $PATH:/root/new
 
 
 problem:2 #create a directory with name "-okgoogle"
