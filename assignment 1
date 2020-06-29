@@ -34,3 +34,45 @@ root@localhost ~]# mkdir -p ' '
 [root@localhost ~]# ls
 ' '                Desktop     Downloads   -okgoogle   Public     Templates
  anaconda-ks.cfg   Documents   Music       Pictures    restored   Videos
+ 
+ problem :3# create a directory structure
+ 
+command: mkdir -p a/b/g/k/reboot a/b/h/j/reboot a/c/i/j/reboot a/c/j/l/reboot a/d/f/l/reboot a/d/e/m/reboot
+
+problem:4 # share files and folders
+step 1) add user jack and jill by login as root
+#useradd jack 
+#user add jill
+step 2) #vim/etc/group
+edit this file setting to change the permission
+enter the insert mode by pressing i
+sudo:x:1001:jack
+sudo:x:1002:jill
+press esc to exit the insert mode 
+press :wq to save and exit
+step 3) to add the new group to an existing user and to add a supplementry group to both the user
+# usermod -aG sudo jack
+# usermod -aG sudo jill
+step 4) switch to jack user
+# su - jack
+step 5) creating two directories and a file
+$ mkdir jack1 jack2
+$ vim jack.txt
+enter the insert mode 
+..
+hello jack
+.
+press esc and :wq
+step 6) now switch to jill user
+su jill
+step 7) creating two directories and a file
+$ mkdir jill1 jill2
+$ vim jill.txt
+enter the insert mode 
+..
+hey jill
+.
+press esc and :wq
+ 
+
+
