@@ -33,6 +33,7 @@ root@localhost ~]# mkdir -p ' '
 [root@localhost ~]# ls
 ' '                Desktop     Downloads   -okgoogle   Public     Templates
  anaconda-ks.cfg   Documents   Music       Pictures    restored   Videos
+ ![image](https://user-images.githubusercontent.com/50402338/86525301-f6093780-bea2-11ea-9ae8-cccc6c105442.png)
  
  problem :3# create a directory structure
  
